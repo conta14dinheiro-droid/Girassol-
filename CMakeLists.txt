@@ -6,6 +6,7 @@ option(GIRASSOL_ENABLE_SANITIZERS "Enable AddressSanitizer and UndefinedBehavior
 
 add_library(girassol_core STATIC
     native/src/world.cpp
+    native/src/omega.cpp
 )
 target_include_directories(girassol_core PUBLIC native/include)
 target_compile_features(girassol_core PUBLIC cxx_std_20)
